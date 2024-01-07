@@ -1,0 +1,655 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    --color1: #FFF;
+    --color2: #000000;
+    --color3: #585555;
+    scroll-behavior: smooth;
+    user-select: none;
+    transition: 0.5s;
+}
+
+.nav-bar {
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 12px 20px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {
+    width: 100%;
+}
+
+.open-menu,
+.close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: 190%;
+    background-color: #000000;
+}
+
+.row-awal {
+    display: flex;
+    flex-direction: row;
+    padding-top: 120px;
+    padding-left: 10px;
+}
+
+.namekuu h4 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.gris-pnglm {
+    width: 2px;
+    height: 90px;
+    background-color: #fdac15;
+}
+
+.garis-pnglm {
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.garis-penglmnlg {
+    width: 350px;
+    height: 2px;
+    background-color: #fdac15;
+}
+
+
+.kuning {
+    color: var(--color3);
+}
+
+.namekuu {
+    padding-left: 10px;
+    padding-top: 70px;
+}
+
+.image-prof img {
+    max-width: 140px;
+    max-height: 350px;
+    opacity: 40%;
+}
+
+.image-prof {
+    padding-left: 20px;
+    padding-top: 50px;
+}
+
+.test-ilmulgi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-profe {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.kmpus-mngjrr p {
+    color: #fff;
+}
+
+.image-profe img {
+    max-width: 300px;
+    max-height: 250px;
+    opacity: 50%;
+}
+
+.pt-atas {
+    display: flex;
+    flex-direction: row;
+    padding-top: 25px;
+    gap: 10px;
+}
+
+.pt-atasa {
+    display: flex;
+    flex-direction: row;
+    padding-top: 18px;
+    gap: 10px;
+}
+
+.garisnya {
+    padding-top: 5px;
+}
+
+.garis-tipis {
+    width: 60px;
+    height: 1px;
+    background-color: var(--color3);
+}
+
+.sosmedku a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.tengah-gris {
+    color: var(--color3);
+}
+
+.button-atur {
+    padding-top: 40px;
+}
+
+.border-aturr {
+    width: 120px;
+    height: 40px;
+    border: 2px solid #FFF;
+}
+
+.button-atur a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 12px;
+}
+
+.atur-brdrr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.about-me {
+    padding-top: 150px;
+}
+
+.about-met {
+    padding-top: 140px;
+}
+
+.pt-kirinya {
+    display: flex;
+    flex-direction: row;
+}
+
+.putus-putus {
+    padding-top: 6px;
+}
+
+.gris-lrs {
+    width: 2px;
+    height: 180px;
+    background-color: #fdac15;
+}
+
+.gariusnya {
+    width: 2px;
+    height: 70px;
+    background-color: #fdac15;
+}
+
+.garisnya-kirian {
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+.buletannyaa {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.aturntaa {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.aturntaat {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding-top: 70px;
+}
+
+.text-edu {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.bedain-wrna {
+    width: 110%;
+    height: 100%;
+    background-color: #252424;
+    border-top-right-radius: 40px;
+}
+
+.footer {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+}
+
+.aturatsd {
+    padding-top: 60px;
+}
+
+.text-pndii p {
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 8px;
+}
+
+.aturkiriii {
+    padding-top: 10px;
+}
+
+.skills-show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+    flex-direction: column;
+}
+
+.skills-show h4 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #FFF;
+}
+
+.border-klmnya {
+    max-width: 120px;
+    max-height: 150px;
+    min-width: 120px;
+    min-height: 140px;
+    background-color: #2c2929;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+}
+
+
+
+.border-klmnyaa {
+    max-width: 250px;
+    max-height: 330px;
+    min-width: 230px;
+    min-height: 300px;
+    background-color: #2c2929;
+    border-radius: 10px;
+
+}
+
+.icon {
+    color: #1e88df;
+}
+
+.text-pndii h4 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.gedei {
+    font-size: 30px;
+    color: #0e79d1;
+}
+
+.bsnya {
+    font-size: 35px;
+    color: #7127a1;
+}
+
+.oren {
+    font-size: 35px;
+    color: #ff7b00;
+}
+
+.cyan {
+    font-size: 35px;
+    color: #17e4d3;
+}
+
+.red {
+    font-size: 35px;
+    color: #ff0000;
+}
+
+.biru {
+    font-size: 35px;
+    color: #0b5bd3;
+}
+
+.wpw {
+    font-size: 35px;
+    color: #5588d4;
+}
+
+.hijau {
+    font-size: 35px;
+    color: #2a9c67;
+}
+
+.hitam {
+    font-size: 35px;
+    color: #000;
+}
+
+.birut {
+    font-size: 35px;
+    color: #ffd51b;
+}
+
+.tambahan-skkl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.garisnyalahya {
+    width: 2px;
+    height: 1700px;
+    background-color: #fdac15;
+}
+
+.aturkolomnya {
+    padding-top: 150px;
+    display: flex;
+
+    flex-direction: column;
+    gap: 80px;
+}
+
+.aturkolomnyas {
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.atur-garistengah {
+    padding-top: 40px;
+}
+
+
+
+
+.intro-dlu {
+    padding-top: 75px;
+    padding-left: 10px;
+}
+
+.jnjang-frnk {
+    padding-top: 80px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.jnjang-frnk h4 {
+    color: var(--color1);
+    font-size: 15px;
+}
+
+.text-aboutme a {
+    color: #fdac15;
+    font-size: 12px;
+}
+
+.garisnya-yah {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.intro-dlu h4 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    text-align: left;
+    opacity: 90%;
+}
+
+.class-about h4 {
+    font-size: 25px;
+    font-weight: 800;
+    color: #FFF;
+}
+
+.class-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.garisnya-ya {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.aboutme-img {
+    padding-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme-img img {
+    max-width: 300px;
+    max-height: 250px;
+    opacity: 50%;
+}
+
+.text-aboutme {
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.border-skillsb {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.gris-tnghhh {
+    width: 30px;
+    height: 2px;
+    background-color: #fdac15;
+}
+
+.row-skills {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.aturnyaaa-klm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.aturnyaaa-klm p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    opacity: 90%;
+}
+
+.text-aboutme p {
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    opacity: 70%;
+}
+
+.gedei {
+    font-size: 60px;
+    color: #0e79d1;
+}
+
+.css {
+    font-size: 60px;
+    color: #ecf00a;
+}
+
+.php {
+    font-size: 60px;
+    color: #3419ce;
+}
+
+.bunbgkus-atas {
+    padding-top: 40px;
+}
+
+
+@media(max-width: 610px) {
+    .pengecualian {
+        display: none;
+    }
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        position: fixed;
+        background-color: var(--color2);
+        padding: 12px 20px;
+        z-index: 100000;
+    }
+
+    .sticky .nav-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        position: fixed;
+        background-color: var(--color2);
+        width: 100%;
+        height: 70px;
+        padding: 1px 20px;
+        z-index: 100000;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: var(--color2);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: block;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+}
+
+@media(min-width: 611px) {
+    .container {
+        display: none;
+    }
+}
